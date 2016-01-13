@@ -9,4 +9,8 @@
     <string name="title_activity_dynamic_list_view">DynamicListViewActivity</string>
     <string name="title_activity_jsonlist">JSONListActivity</string>
     <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_ad">AdActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
 </resources>

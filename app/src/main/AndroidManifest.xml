@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gauti.testapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ServiceActivity"
+            android:label="@string/title_activity_service"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gauti.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BroadcastActivity"
+            android:label="@string/title_activity_broadcast"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gauti.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/title_activity_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".MyService" />
+
+        <receiver android:name=".MyReceiver">
+            <intent-filter>
+                <action android:name="com.gauti.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SQLiteActivity"
+            android:label="@string/title_activity_sqlite"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gauti.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CamActivity"
+            android:label="@string/title_activity_cam"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gauti.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DynamicListViewActivity"
+            android:label="@string/title_activity_dynamic_list_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gauti.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gauti.testapp.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

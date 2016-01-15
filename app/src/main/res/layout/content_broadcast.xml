@@ -15,4 +15,5 @@
         android:text="Send Broadcast"
         android:onClick="sendBroadcast"
         />
+
 </LinearLayout>

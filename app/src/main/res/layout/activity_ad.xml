@@ -30,5 +30,5 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="View Ad" />
+        android:text="View Ad`" />
 </RelativeLayout>

@@ -32,7 +32,7 @@ public class NotificationActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Clcik the button to see a user generated notification.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -57,7 +57,7 @@ public void shownotification(View view){
     builder.setContentTitle("User Generated Notification");
     builder.setContentText("autogen notifications are created using service");
     builder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
-    builder.setSmallIcon(R.drawable.gj);
+    builder.setSmallIcon(R.drawable.ic_launcher);
     builder.setContentIntent(pendingIntent);
     builder.setOngoing(false);
    // builder.setSubText();   //API level 16

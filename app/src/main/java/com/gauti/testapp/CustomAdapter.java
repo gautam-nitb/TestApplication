@@ -27,7 +27,7 @@ public class CustomAdapter extends ArrayAdapter<String> {
         ImageView image=(ImageView) CustomView.findViewById(R.id.ivListImage);
 
         text.setText(singleItem);
-        image.setImageResource(R.drawable.gj);
+        image.setImageResource(R.drawable.ic_launcher);
 
 
         return CustomView;

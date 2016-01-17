@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         .setAction("Action", null).show();
             }
         });
-        String[] activities={"Test Service","Test Custom Broadcast","Test Custom ListView","Test SQLite","Test Cam","Test Dynamic ListView","Test Create Notification","Test Advertisement","Get Developer's Location","Open other apps"};
+        String[] activities={"Test Service","Test Custom Broadcast","Test Custom ListView","Test SQLite","Test Cam","Test Dynamic ListView","Test Create Notification","Test Advertisement","Get Developer's Location","Open other apps","Custom","Test Volley String Data"};
         ListAdapter items=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,activities);
         ListView list=(ListView) findViewById(R.id.lvMain);
         list.setAdapter(items);
@@ -110,6 +110,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 9:
                 intent = new Intent(this, OpenOtherActivity.class);
+                startActivity(intent);
+                break;
+            case 10:
+                intent = new Intent(this, CustomViewActivity.class);
+                startActivity(intent);
+                break;
+
+            case 11:
+                intent = new Intent(this, StringVolley.class);
                 startActivity(intent);
                 break;
 

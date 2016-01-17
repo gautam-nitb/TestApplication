@@ -12,8 +12,11 @@
     -->
 
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
@@ -142,15 +145,6 @@
                 android:value="com.gauti.testapp.MainActivity" />
         </activity>
         <activity
-            android:name=".NavigateActivity"
-            android:label="@string/title_activity_navigate"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gauti.testapp.MainActivity" />
-        </activity>
-        <activity
             android:name=".OpenOtherActivity"
             android:label="@string/title_activity_open_other"
             android:parentActivityName=".MainActivity"
@@ -160,11 +154,17 @@
                 android:value="com.gauti.testapp.MainActivity" />
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:name=".CustomViewActivity"
+            android:label="@string/title_activity_custom_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gauti.testapp.MainActivity" />
+        </activity>
         <activity
-            android:name=".ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
+            android:name=".StringVolley"
+            android:label="@string/title_activity_string_volley"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
